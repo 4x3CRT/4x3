@@ -1,9 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
   <title>4x3</title>
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      text-align: center;
+    }
+
+    #wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 760px;
+      margin-top: -280px;
+      margin-left: -380px;
+    }
+
+    #grid-container {
+      width: 760px;
+      margin: 0 auto;
+    }
+
+    .grid-row {
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+    }
+    
+    #bottom-center-img {
+      max-width: 325px;
+      height: auto;
+      vertical-align: bottom;
+    }
+
+    #bottom-left-img,
+    #bottom-right-img {
+      height: 250px;
+      width: auto;
+      vertical-align: bottom;
+    }
+
+    #enter-button {
+      margin-top: 20px;
+      padding: 10px 40px;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #333333;
+      color: #00ff00;
+      border: 2px solid #00ff00;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    #enter-button:hover {
+      background-color: #00ff00;
+      color: #000000;
+    }
+  </style>
 </head>
 <body>
-placeholder
+  <div id="wrapper">
+    <div id="grid-container">
+      <div class="grid-row">
+        <img id="bottom-left-img" src="assets/sony_crt.gif" alt="Sony CRT"><img id="bottom-center-img" src="assets/sharp_crt.gif" alt="Sharp CRT"><img id="bottom-right-img" src="assets/sanyo_crt.gif" alt="Sharp CRT Angle">
+      </div>
+    </div>
+    <div>
+      <a id="enter-button" href="main.html">ENTER</a>
+    </div>
+  </div>
 </body>
 </html>
